@@ -19,4 +19,6 @@ jobs:
                 pip install semgrep
 
             - name: run semgrep
-              run: semgrep scan > semgrep-results.json
+              run: |
+               semgrep scan > semgrep-results.json
+               cat semgrep-results.json
