@@ -19,4 +19,4 @@ jobs:
                 pip install semgrep
 
             - name: run semgrep
-              run: semgrep --config p/ci . --json > semgrep-results.json
+              run: semgrep scan > semgrep-results.json
